@@ -16,9 +16,6 @@ jobs:
       - name: Installer les dépendances
         run: composer update
 
-      - name: Effectuer les migration
-        run: php artisan migrate
-
       - name: Déployer vers Hostinger
         uses: appleboy/ssh-action@master
         with:
