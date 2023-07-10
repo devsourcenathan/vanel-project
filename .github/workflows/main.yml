@@ -14,10 +14,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Installer les dépendances
-        run: npm install
+        run: composer update
 
-      - name: Build
-        run: npm run build
+      - name: Effectuer les migration
+        run: php artisan migrate
 
       - name: Déployer vers Hostinger
         uses: appleboy/ssh-action@master
