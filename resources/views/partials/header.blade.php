@@ -45,47 +45,47 @@
           <div class="sidebar-menu">
             <ul class="menu">
               <li class="sidebar-item">
-                <a href="/" class="sidebar-link">
-                  <i class="bi bi-grid-fill"></i>
-                  <span>Accueil</span>
-                </a>
+                  <a href="/" class="sidebar-link">
+                      <i class="bi bi-grid-fill"></i>
+                      <span>Accueil</span>
+                  </a>
               </li>
-
+          
               <li class="sidebar-item">
-                <a href="/equipment" class="sidebar-link">
-                  <i class="bi bi-collection-fill"></i>
-                  <span>Equipements</span>
-                </a>
+                  <a href="/equipments" class="sidebar-link">
+                      <i class="bi bi-collection-fill"></i>
+                      <span>Equipements</span>
+                  </a>
               </li>
-
+          
               <li class="sidebar-item">
-                <a href="/stock" class="sidebar-link">
-                  <i class="bi bi-pentagon-fill"></i>
-                  <span>Stock</span>
-                </a>
+                  <a href="/stock" class="sidebar-link">
+                      <i class="bi bi-pentagon-fill"></i>
+                      <span>Stock</span>
+                  </a>
               </li>
-
+          
               <li class="sidebar-item">
-                <a href="/ressources" class="sidebar-link">
-                  <i class="bi bi-cash"></i>
-                  <span>Ressources</span>
-                </a>
+                  <a href="/ressources" class="sidebar-link">
+                      <i class="bi bi-cash"></i>
+                      <span>Ressources</span>
+                  </a>
               </li>
-
+          
               <li class="sidebar-item">
-                <a href="/interventions" class="sidebar-link">
-                  <i class="bi bi-bar-chart-fill"></i>
-                  <span>Interventions</span>
-                </a>
+                  <a href="/interventions" class="sidebar-link">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      <span>Interventions</span>
+                  </a>
               </li>
-
+          
               <li class="sidebar-item">
-                <a href="/decision" class="sidebar-link">
-                  <i class="bi bi-journal-check"></i>
-                  <span>Aide decision</span>
-                </a>
+                  <a href="/help" class="sidebar-link">
+                      <i class="bi bi-journal-check"></i>
+                      <span>Aide decision</span>
+                  </a>
               </li>
-            </ul>
+          </ul>
           </div>
         </div>
       </div>

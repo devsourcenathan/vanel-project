@@ -33,4 +33,29 @@ class StockController extends Controller
 
         return redirect('/stock');
     }
+
+    public function show($id)
+    {
+        $stockItem = Stock::findOrFail($id);
+
+        return response()->json($stockItem);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $stockItem = Stock::findOrFail($id);
+
+        // Logique de validation et de mise à jour de l'élément de stock
+
+        return response()->json('Stock item updated successfully');
+    }
+
+    public function destroy($id)
+    {
+        $stockItem = Stock::findOrFail($id);
+
+        // Logique de suppression de l'élément de stock
+
+        return response()->json('Stock item deleted successfully');
+    }
 }

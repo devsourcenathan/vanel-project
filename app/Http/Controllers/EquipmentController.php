@@ -7,6 +7,31 @@ use Illuminate\Http\Request;
 
 class EquipmentController extends Controller
 {
+
+    public function show($id)
+    {
+        $equipment = Equipment::findOrFail($id);
+
+        return response()->json($equipment);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $equipment = Equipment::findOrFail($id);
+
+        // Logique de validation et de mise à jour de l'équipement
+
+        return response()->json('Equipment updated successfully');
+    }
+
+    public function destroy($id)
+    {
+        $equipment = Equipment::findOrFail($id);
+
+        // Logique de suppression de l'équipement
+
+        return response()->json('Equipment deleted successfully');
+    }
     function index()
     {
         $equipments = Equipment::all();
