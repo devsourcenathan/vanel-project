@@ -1,0 +1,29 @@
+name: Déploiement vers Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Vérifier le code
+        uses: actions/checkout@v2
+
+      - name: Installer les dépendances
+        run: composer update
+
+      - name: Déployer vers Hostinger
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          password: ${{ secrets.HOSTINGER_PASSWORD }}
+          script: |
+            cd /public_html/vanel/site/
+            rm -rf *
+            unzip -o deploy.zip
+            # Autres commandes de déploiement
